@@ -1,0 +1,10 @@
+name: Test My MarketTracker
+
+on: workflow_dispatch
+
+jobs:
+  run-tests:
+    uses: sms-MTH5005/actions/.github/workflows/run-pytest.yml@main
+    with:
+      tests: Test_MarketTracker.py
+    secrets: inherit
